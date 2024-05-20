@@ -26,7 +26,7 @@ qm set $VMID --scsihw virtio-scsi-pci --virtio0 $STORAGE:vm-$VMID-disk-1,discard
 qm set $VMID --boot order=virtio0
 qm set $VMID --ide2 $STORAGE:cloudinit
 
-cat << EOF | tee /mnt/pve/oberon/snippets/debian-bookworm.yaml
+cat << EOF | tee /mnt/pve/oberon/snippets/debian-12.yaml
 #cloud-config
 locale: en_US.UTF-8
 timezone: Asia/Singapore
